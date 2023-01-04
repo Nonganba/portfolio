@@ -1,12 +1,16 @@
-
-import './App.scss';
-
-import React from 'react'
+import React from "react";
+import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}/>
+      </Routes>
+    </>
+  );
+};
 
-export default App
+export default App;
